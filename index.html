@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ceia Resolvida · Natal sem açúcar, sem glúten e sem lactose</title>
+<meta name="description" content="30 receitas de Natal e Ano Novo sem açúcar adicionado, sem glúten e sem lactose, com cardápio, lista de compras e cronograma. Acesso imediato no app.">
+<meta name="theme-color" content="#7E1A14">
+<meta property="og:title" content="Ceia Resolvida · Natal sem açúcar, sem glúten e sem lactose">
+<meta property="og:description" content="Panetones, ceia completa, sobremesas, presentes e Ano Novo. 30 receitas + cardápio + cronograma. Acesso imediato.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1669130183473-3a4c8524082f?w=1200&h=630&q=75&fit=crop&fm=jpg">
+<link rel="icon" href="img/icon.png">
+
+<script>
+/* ===================== CONFIGURAÇÃO =====================
+   Ofertas por período (datas reais do calendário combinado).
+   checkout = link da oferta na Cakto (preencher quando criada). */
+window.CONFIG = {
+  pixelId: "1727998194935547",
+  app: "https://app.cozinhaqueresolve.com/",
+  periodos: [
+    { ate: "2026-10-31T23:59:59-03:00", preco: "19,90", valor: 19.90, de: "37", selo: "Oferta de lançamento", prazo: "Até 31/10 às 23h59. Dia 01/11 o preço passa para R$ 37.", checkout: "https://pay.cakto.com.br/7dvdjn6", popup27: false },
+    { ate: "2026-11-22T23:59:59-03:00", preco: "37", valor: 37, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/6ae78sk", popup27: true },
+    { ate: "2026-11-30T23:59:59-03:00", preco: "37", valor: 37, de: "67,80", selo: "Black do Natal", prazo: "De 23 a 30/11: a Ceia vem com o Festival de Panetones e o Kit Presente, sem custo a mais.", checkout: "https://pay.cakto.com.br/34ospai", popup27: false, black: true },
+    { ate: "2026-12-31T23:59:59-03:00", preco: "37", valor: 37, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/6ae78sk", popup27: true },
+    { ate: "2099-12-31T23:59:59-03:00", preco: "29,90", valor: 29.90, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/ygknwb6", popup27: false }
+  ],
+  checkout27: "https://pay.cakto.com.br/3fezcei",           /* oferta de R$ 27 (recuperação), mesma entrega da de R$ 37 */
+  testimonials: []          /* só depoimentos reais, com autorização */
+};
+(function(){
+  var now = Date.now(), p = CONFIG.periodos;
+  for (var i = 0; i < p.length; i++) if (now <= new Date(p[i].ate).getTime()) { CONFIG.atual = p[i]; break; }
+  if (!CONFIG.atual) CONFIG.atual = p[p.length - 1];
+})();
+</script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', CONFIG.pixelId);
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', { content_name: 'Ceia Resolvida', content_type: 'product', value: CONFIG.atual.valor, currency: 'BRL' });
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1727998194935547&ev=PageView&noscript=1"></noscript>
+
+<style>
+@font-face{font-family:Bebas;src:url(fonts/bebas.woff2) format("woff2");font-display:swap}
+:root{
+  --bg:#FBF5EA; --paper:#FFFFFF; --cream:#F3EBDC; --ink:#211A17; --muted:#6B605A; --line:#E7DDCB;
+  --red:#B3261E; --red-d:#7E1A14; --gold:#E9B44C; --gold-d:#B8862A; --green:#1D5A2C;
+  --display:Bebas,Impact,"Arial Narrow",sans-serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --shadow:0 12px 30px rgba(70,30,15,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.5px;line-height:.98;margin:0}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px}
+section{padding:54px 0}
+.eyebrow{font:700 12px/1 var(--body);letter-spacing:2px;text-transform:uppercase;color:var(--red)}
+.lead{font-size:18px;color:var(--muted)}
+.center{text-align:center}
+
+/* faixa de oferta */
+.bar{background:var(--red-d);color:#fff;font:600 14px/1.35 var(--body);text-align:center;padding:9px 14px}
+.bar b{color:var(--gold)}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 50% 0%,#9B2018 0%,#6E140F 60%,#4D0D09 100%);color:#fff;padding:34px 0 46px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.5px);background-size:22px 22px;opacity:.35;pointer-events:none}
+.hero .wrap{position:relative}
+.brand{display:flex;align-items:center;gap:10px;font:700 13px var(--body);letter-spacing:.5px;opacity:.92}
+.brand img{width:34px;height:34px;border-radius:9px}
+.hero h1{font-size:64px;margin:22px 0 6px;color:#fff}
+.hero h1 span{color:var(--gold)}
+.hero .sub{font-size:19px;line-height:1.5;color:#F6E7DF;margin:10px 0 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.tags li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:6px 12px;font:600 13px var(--body)}
+.mosaic{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:8px;margin:26px 0 0;height:300px}
+.mosaic div{border-radius:16px;background:#3a0b08 center/cover no-repeat;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.mosaic div:first-child{grid-row:1/3}
+.foto-nota{font-size:11px;opacity:.7;margin:6px 0 0;text-align:right}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:62px;border:0;border-radius:16px;
+  background:linear-gradient(180deg,#F2C562,#E0A73A);color:#3A1A06;font:800 18px/1.2 var(--body);text-decoration:none;
+  box-shadow:0 8px 0 #A87420,0 14px 28px rgba(0,0,0,.25);cursor:pointer;padding:14px 18px;text-align:center;transition:transform .08s}
+.btn:active{transform:translateY(4px);box-shadow:0 4px 0 #A87420,0 8px 18px rgba(0,0,0,.2)}
+.btn small{display:block;font-weight:600;font-size:13px;opacity:.8}
+.cta-note{text-align:center;font-size:13px;margin:12px 0 0;opacity:.85}
+.hero .cta{margin-top:26px}
+
+/* dor */
+.pain{background:var(--paper)}
+.pain p{margin:14px 0}
+.pain h2{font-size:42px}
+.quote{border-left:4px solid var(--gold);padding:4px 0 4px 16px;font-size:19px;font-weight:600;margin:20px 0}
+
+/* o que tem dentro */
+.inside h2{font-size:46px;margin:8px 0 6px}
+.cat{background:var(--paper);border:1px solid var(--line);border-radius:20px;margin:16px 0;overflow:hidden;box-shadow:var(--shadow)}
+.cat-h{display:flex;gap:14px;align-items:center;padding:16px}
+.cat-h .ph{width:74px;height:74px;border-radius:14px;flex:none;background:var(--cream) center/cover}
+.cat-h h3{font-size:28px}
+.cat-h p{margin:2px 0 0;color:var(--muted);font-size:14px;line-height:1.4}
+.cat ul{margin:0;padding:0 16px 16px 16px;list-style:none;display:grid;gap:6px}
+.cat li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;line-height:1.4}
+.cat li:before{content:"✓";color:var(--green);font-weight:800}
+.cat .free{font:700 11px var(--body);background:#E6F2E2;color:var(--green);border-radius:999px;padding:2px 8px;margin-left:4px;white-space:nowrap}
+.cat.bonus{border:2px dashed var(--gold-d);background:#FFFBF1}
+
+/* guias */
+.guides{background:var(--cream)}
+.guides h2{font-size:44px;margin:8px 0 18px}
+.g{display:flex;gap:14px;background:var(--paper);border-radius:16px;padding:16px;margin:12px 0;border:1px solid var(--line)}
+.g .e{font-size:30px;line-height:1}
+.g b{display:block;font-size:17px}
+.g span{color:var(--muted);font-size:15px;line-height:1.45}
+
+/* como funciona */
+.how h2{font-size:44px;margin:8px 0 18px}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step:before{counter-increment:s;content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font:700 17px/36px var(--body);text-align:center}
+.step p{margin:5px 0 0}
+.phone{margin:26px auto 0;max-width:300px;border-radius:34px;border:10px solid #1d1714;overflow:hidden;box-shadow:var(--shadow);background:#1d1714}
+.mock{background:#FBF5EA;padding:14px 12px 16px;font-size:13px}
+.mk-top{font:400 24px var(--display);display:flex;justify-content:space-between;align-items:center}
+.mk-top span{font:700 10px var(--body);background:#E6F2E2;color:var(--green);border-radius:999px;padding:3px 8px}
+.mk-tabs{display:flex;gap:6px;margin:10px 0;overflow:hidden}
+.mk-tabs b,.mk-tabs i{font:700 11px var(--body);font-style:normal;border-radius:999px;padding:5px 9px;white-space:nowrap;border:1px solid var(--line);background:#fff}
+.mk-tabs b{background:var(--red);border-color:var(--red);color:#fff}
+.mk-r{display:flex;gap:10px;align-items:center;background:#fff;border-radius:12px;padding:6px;margin:7px 0;border:1px solid var(--line)}
+.mk-r img{width:58px;height:58px;border-radius:9px;object-fit:cover;background:var(--cream)}
+.mk-r b{display:block;font-size:13px;line-height:1.25}
+.mk-r small{color:var(--muted);font-size:11px}
+.mk-btn{background:var(--green);color:#fff;border-radius:10px;text-align:center;padding:10px;font:700 12px var(--body);margin-top:10px}
+
+
+/* teste grátis */
+.try{background:var(--paper);border:2px solid var(--green);border-radius:20px;padding:22px;margin-top:30px}
+.try h3{font-size:30px;color:var(--green)}
+.try p{margin:8px 0 14px}
+.btn2{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;border-radius:12px;padding:13px 18px;font:700 16px var(--body);text-decoration:none}
+
+/* preço */
+.offer{background:radial-gradient(120% 100% at 50% 0%,#9B2018 0%,#5A100C 100%);color:#fff}
+.offer h2{font-size:48px;color:#fff}
+.box{background:var(--paper);color:var(--ink);border-radius:24px;padding:24px 20px;margin-top:22px;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.box .selo{display:inline-block;background:var(--red);color:#fff;font:800 12px var(--body);letter-spacing:1px;text-transform:uppercase;border-radius:999px;padding:6px 12px}
+.box ul{list-style:none;margin:16px 0;padding:0;display:grid;gap:9px}
+.box li{display:flex;gap:10px;font-size:15.5px;line-height:1.4}
+.box li:before{content:"✓";color:var(--green);font-weight:800}
+.box li.plus:before{content:"🎁"}
+.price{text-align:center;margin:18px 0 6px}
+.price .de{color:var(--muted);text-decoration:line-through;font-size:17px}
+.price .por{font:400 76px/1 var(--display);color:var(--red)}
+.price .por small{font-size:32px}
+.price .pg{font-size:14px;color:var(--muted)}
+.prazo{background:#FFF4DA;border-radius:12px;padding:10px 12px;font:600 14px/1.4 var(--body);text-align:center;margin:12px 0 18px;color:#6A4A10}
+.pay{display:flex;justify-content:center;gap:14px;font-size:13px;color:var(--muted);margin-top:14px}
+.box .btn{box-shadow:0 8px 0 #A87420,0 12px 22px rgba(0,0,0,.18)}
+
+/* garantia */
+.guarantee{display:flex;gap:16px;align-items:center;background:var(--paper);border-radius:20px;padding:20px;border:1px solid var(--line)}
+.seal{flex:none;width:92px;height:92px;border-radius:50%;background:conic-gradient(var(--gold),#F6D88A,var(--gold-d),var(--gold));display:grid;place-items:center;color:#3A1A06;text-align:center;font:400 30px/0.9 var(--display)}
+.seal small{display:block;font-size:14px}
+.guarantee h3{font-size:30px}
+.guarantee p{margin:6px 0 0;font-size:15.5px;color:var(--muted)}
+
+/* depoimentos */
+.testi{display:none}
+.testi.on{display:block}
+.t{background:var(--paper);border-radius:16px;padding:16px;margin:12px 0;border:1px solid var(--line)}
+
+/* faq */
+.faq h2{font-size:44px;margin-bottom:12px}
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:0 16px}
+summary{cursor:pointer;list-style:none;font-weight:700;padding:16px 26px 16px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:12px;font-size:24px;color:var(--red)}
+details[open] summary:after{content:"–"}
+details p{margin:0 0 16px;color:var(--muted);font-size:15.5px}
+
+footer{background:#1d1714;color:#cfc4bc;font-size:13px;padding:30px 0 110px;text-align:center}
+footer a{color:#fff}
+
+/* botão fixo (celular) */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,245,234,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .btn{min-height:54px;font-size:16px;box-shadow:0 5px 0 #A87420}
+
+/* popup de saída (desktop) */
+.pop{position:fixed;inset:0;z-index:60;background:rgba(20,10,8,.6);display:none;align-items:center;justify-content:center;padding:18px}
+.pop.on{display:flex}
+.pop .in{background:var(--paper);border-radius:22px;max-width:440px;width:100%;padding:26px 22px;text-align:center;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.pop h3{font-size:40px;color:var(--red)}
+.pop p{color:var(--muted);margin:10px 0 18px}
+.pop .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:26px;cursor:pointer;color:var(--muted)}
+.pop .no{display:block;margin:14px auto 0;background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:14px}
+
+@media (min-width:760px){
+  .hero h1{font-size:84px}
+  .mosaic{height:380px}
+  .sticky{display:none}
+}
+@media (max-width:380px){ .hero h1{font-size:54px} .price .por{font-size:64px} }
+</style>
+</head>
+<body>
+
+<div class="bar" id="bar"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="img/icon.png" alt="">COZINHA QUE RESOLVE</div>
+    <h1>Natal com a mesa cheia. <span>Sem açúcar, sem glúten e sem lactose.</span></h1>
+    <p class="sub">30 receitas de Natal e Ano Novo, com cardápio pronto, lista de compras e um cronograma que diz o que fazer em cada dia. Todo mundo come junto, do panetone à sobremesa.</p>
+    <ul class="tags"><li>🎄 30 receitas</li><li>🍞 5 panetones</li><li>🛒 Lista de compras</li><li>📱 Acesso imediato</li></ul>
+    <div class="mosaic" aria-hidden="true">
+      <div data-bg="https://images.unsplash.com/photo-1669130183473-3a4c8524082f?w=900&q=70&auto=format&fit=crop"></div><div data-bg="https://images.unsplash.com/photo-1636628040211-7d15f57c230e?w=600&q=70&auto=format&fit=crop"></div><div data-bg="https://images.unsplash.com/photo-1792354912044-2db32d86cbe2?w=600&q=70&auto=format&fit=crop"></div>
+    </div>
+    <p class="foto-nota">Fotos ilustrativas</p>
+    <div class="cta"><a class="btn buy" href="#oferta" data-lugar="hero"><span>QUERO A CEIA RESOLVIDA<small class="js-preco"></small></span></a></div>
+    <p class="cta-note">Pagamento único · Pix ou cartão · Garantia de 7 dias</p>
+  </div>
+</header>
+
+<section class="pain">
+  <div class="wrap">
+    <p class="eyebrow">Você conhece essa cena</p>
+    <h2>Todo Natal alguém fica só no arroz e na salada.</h2>
+    <p>Quem evita açúcar, glúten ou lactose sabe como é: o panetone tem tudo o que não pode, a sobremesa leva leite condensado e a farofa vem com farinha de trigo e manteiga.</p>
+    <p>Aí sobram duas saídas. Fazer uma comida separada só para você, ou passar a noite olhando os outros comerem.</p>
+    <p class="quote">A Ceia Resolvida é a terceira saída: uma ceia inteira que a família toda come junto, do mesmo prato.</p>
+    <p>Panetone, frango assado, pavê, pudim, rabanada e até os presentes de Natal. Tudo com ingredientes de mercado e explicado passo a passo.</p>
+  </div>
+</section>
+
+<section class="inside" id="dentro">
+  <div class="wrap">
+    <p class="eyebrow center">O que vem na Ceia Resolvida</p>
+    <h2 class="center">30 receitas para o Natal inteiro</h2>
+    <p class="lead center">Sem açúcar adicionado (usamos xilitol ou eritritol), sem glúten e sem lactose.</p>
+    <div id="cats"></div>
+  </div>
+</section>
+
+<section class="guides">
+  <div class="wrap">
+    <p class="eyebrow">E o que ninguém te entrega</p>
+    <h2>A ceia organizada, do mercado à mesa</h2>
+    <div class="g"><div class="e">🍽️</div><div><b>Cardápio pronto para 4, 8 ou 12 pessoas</b><span>Entrada, prato principal, acompanhamentos, sobremesas e bebida, com quanto fazer de cada um.</span></div></div>
+    <div class="g"><div class="e">🛒</div><div><b>Lista de compras em um toque</b><span>Todos os ingredientes do cardápio vão para a lista do app. Dá para marcar o que já comprou e mandar a lista pelo WhatsApp.</span></div></div>
+    <div class="g"><div class="e">⏰</div><div><b>Cronograma "Ceia sem correria"</b><span>O que fazer 7 dias antes, 3 dias antes, na véspera e nas últimas horas. Você chega na ceia tranquila.</span></div></div>
+    <div class="g"><div class="e">🔄</div><div><b>Guia de substituições</b><span>Não achou psyllium, fécula ou eritritol? Veja o que usar no lugar sem estragar a receita.</span></div></div>
+    <div class="g"><div class="e">🏷️</div><div><b>Etiquetas de presente para imprimir</b><span>12 etiquetas por folha, com espaço para o nome de quem vai ganhar e a data.</span></div></div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <p class="eyebrow">Como você recebe</p>
+    <h2>Abre no celular, na hora</h2>
+    <div class="steps">
+      <div class="step"><p><b>Você faz o pagamento</b> por Pix ou cartão.</p></div>
+      <div class="step"><p><b>Chega um link no seu e-mail</b> (e aparece na tela depois da compra).</p></div>
+      <div class="step"><p><b>Toca no link e as receitas abrem no app</b> Cozinha que Resolve. Não precisa baixar nada da loja nem criar senha.</p></div>
+      <div class="step"><p><b>Cozinha com o celular do lado:</b> ingredientes, modo de preparo e a opção de manter a tela acesa enquanto cozinha.</p></div>
+    </div>
+    <div class="phone"><div class="mock">
+      <div class="mk-top">🎄 Ceia Resolvida <span>✓ liberada</span></div>
+      <div class="mk-tabs"><b>Panetones</b><i>Ceia</i><i>Sobremesas</i><i>Presentes</i></div>
+      <div class="mk-r"><img src="https://images.unsplash.com/photo-1636394849426-39501364873c?w=160&q=70&auto=format&fit=crop" alt="" loading="lazy"><div><b>Panetone clássico de frutas</b><small>3h · 1 panetone de 500 g</small></div></div>
+      <div class="mk-r"><img src="https://images.unsplash.com/photo-1636628040211-7d15f57c230e?w=160&q=70&auto=format&fit=crop" alt="" loading="lazy"><div><b>Chocotone</b><small>3h · 1 chocotone de 500 g</small></div></div>
+      <div class="mk-r"><img src="https://images.unsplash.com/photo-1572978841267-2c2a29d7261f?w=160&q=70&auto=format&fit=crop" alt="" loading="lazy"><div><b>Panetone de liquidificador</b><small>2h · Fácil</small></div></div>
+      <div class="mk-r"><img src="https://images.unsplash.com/photo-1545286068-9d912f3f4d80?w=160&q=70&auto=format&fit=crop" alt="" loading="lazy"><div><b>Mini panetones de airfryer</b><small>1h30 · 6 unidades</small></div></div>
+      <div class="mk-btn">🛒 Colocar tudo na lista de compras</div>
+    </div></div>
+
+    <div class="try">
+      <h3>Experimente antes de comprar</h3>
+      <p>Duas receitas da Ceia estão liberadas de graça no app: a <b>rabanada de airfryer</b> e a <b>farofa natalina</b>. Veja como é por dentro.</p>
+      <a class="btn2" id="tryLink" href="https://app.cozinhaqueresolve.com/" target="_blank" rel="noopener">Abrir as receitas grátis →</a>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="wrap">
+    <h2 class="center">Tudo o que você leva</h2>
+    <div class="box">
+      <div class="center"><span class="selo" id="selo"></span></div>
+      <ul id="lista">
+        <li>30 receitas: 5 panetones, 6 pratos da ceia, 6 sobremesas, 4 presentes e 3 de Ano Novo</li>
+        <li>Bônus: 6 receitas "Dia Seguinte" para aproveitar as sobras</li>
+        <li>Cardápio para 4, 8 ou 12 pessoas com lista de compras</li>
+        <li>Cronograma "Ceia sem correria"</li>
+        <li>Guia de substituições</li>
+        <li>Etiquetas de presente para imprimir</li>
+      </ul>
+      <div class="price">
+        <div class="de" id="de"></div>
+        <div class="por"><small>R$</small> <span id="por"></span></div>
+        <div class="pg">pagamento único</div>
+      </div>
+      <div class="prazo" id="prazo"></div>
+      <a class="btn buy" href="#" data-lugar="oferta">QUERO MINHA CEIA RESOLVIDA</a>
+      <div class="pay"><span>🔒 Compra segura</span><span>Pix</span><span>Cartão</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><div>7<small>DIAS</small></div></div>
+      <div><h3>Garantia de 7 dias</h3><p>Abra as receitas, faça o que quiser. Se não for para você, peça o reembolso em até 7 dias e devolvemos 100% do valor, sem perguntas.</p></div>
+    </div>
+    <div class="testi" id="testi"><h2 style="font-size:40px;margin:40px 0 6px">Quem já fez</h2><div id="testiList"></div></div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>É sem açúcar mesmo?</summary><p>Sem açúcar adicionado. No lugar do açúcar usamos xilitol ou eritritol, que vão ao forno e substituem o açúcar na mesma medida. Não usamos mel, açúcar de coco nem frutas cristalizadas. As frutas frescas e secas das receitas têm o açúcar natural delas.</p></details>
+    <details><summary>Preciso comprar ingredientes difíceis?</summary><p>Não. Os ingredientes estão em mercado grande ou loja de produtos naturais: farinha de arroz, fécula de batata, psyllium, leite vegetal, adoçante culinário. E o guia de substituições mostra o que usar se faltar alguma coisa.</p></details>
+    <details><summary>Como recebo o acesso?</summary><p>Logo depois do pagamento chega um link no seu e-mail. É só tocar nele que as receitas abrem no app Cozinha que Resolve, no celular ou no computador. Não precisa baixar nada nem criar senha. Pagamento por Pix libera em instantes.</p></details>
+    <details><summary>Funciona no iPhone e no Android?</summary><p>Sim. O app abre no navegador de qualquer celular, e você pode adicionar à tela inicial para abrir como um aplicativo.</p></details>
+    <details><summary>Troquei de celular. Perco o acesso?</summary><p>Não. O link do e-mail funciona sempre que você precisar, em qualquer aparelho. Se tiver qualquer problema, chama a gente no Instagram @cozinhaqueresolve.br.</p></details>
+    <details><summary>É um livro em PDF?</summary><p>Não. São receitas completas dentro do app, com ingredientes, modo de preparo, lista de compras e etiquetas para imprimir.</p></details>
+    <details><summary>As receitas servem para quem tem alguma condição de saúde?</summary><p>São receitas culinárias, não um tratamento ou dieta. Se você segue orientação médica ou de nutricionista, confira os ingredientes com quem te acompanha.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Pede o reembolso e devolvemos o valor inteiro.</p></details>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap center">
+    <h2 style="font-size:46px">Esse ano, ninguém fica só no arroz.</h2>
+    <p class="lead">30 receitas, cardápio, lista de compras e cronograma, no seu celular em minutos.</p>
+    <a class="btn buy" href="#" data-lugar="final" style="margin-top:20px"><span>QUERO A CEIA RESOLVIDA<small class="js-preco"></small></span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Cozinha que Resolve</b> · Instagram <a href="https://instagram.com/cozinhaqueresolve.br" target="_blank" rel="noopener">@cozinhaqueresolve.br</a></p>
+    <p>Fotos ilustrativas. As receitas foram elaboradas pela Cozinha que Resolve e o resultado pode variar conforme ingredientes, forno e medidas.</p>
+    <p>Este site não é afiliado ao Facebook nem à Meta. Pagamento processado pela Cakto.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn buy" href="#" data-lugar="fixo"><span>QUERO A CEIA RESOLVIDA<small class="js-preco"></small></span></a></div>
+
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popT">
+  <div class="in">
+    <button class="x" aria-label="Fechar" data-close>×</button>
+    <p class="eyebrow">Antes de você ir</p>
+    <h3 id="popT">Leva por R$ 27</h3>
+    <p>Se o preço era o que estava te segurando: a mesma Ceia Resolvida completa, com as 30 receitas, o cardápio, a lista de compras, o cronograma e as etiquetas.</p>
+    <a class="btn buy" href="#" data-lugar="popup" data-oferta="27">QUERO POR R$ 27</a>
+    <button class="no" data-close>Não, obrigado</button>
+  </div>
+</div>
+
+<script>
+(function(){
+var C = window.CONFIG, A = C.atual;
+
+/* ---- receitas por seção (mesmos nomes do app) ---- */
+var CATS = [
+  { t:"Panetones", d:"5 panetones fofinhos, do clássico ao trufado", img:"https://images.unsplash.com/photo-1636394849426-39501364873c?w=240&q=70&auto=format&fit=crop", r:["Panetone clássico de frutas","Chocotone","Panetone de liquidificador (o mais fácil)","Mini panetones de airfryer","Panetone trufado de colher"] },
+  { t:"Ceia salgada", d:"O prato principal e os acompanhamentos", img:"https://images.unsplash.com/photo-1617636423451-0db0119c14cd?w=240&q=70&auto=format&fit=crop", r:["Frango inteiro assado com ervas e laranja","Farofa natalina|free","Arroz natalino","Salpicão com maionese caseira sem lactose","Salada natalina de folhas, manga e castanhas","Pão de alho sem glúten"] },
+  { t:"Sobremesas", d:"As clássicas da família, sem leite condensado", img:"https://images.unsplash.com/photo-1702728109878-c61a98d80491?w=240&q=70&auto=format&fit=crop", r:["Rabanada de airfryer|free","Pavê de chocolate","Pudim de leite de coco","Torta gelada de limão","Mousse de chocolate de 3 ingredientes","Brigadeiro de colher de coco"] },
+  { t:"Para presentear", d:"Lembrancinhas feitas em casa", img:"https://images.unsplash.com/photo-1639610806386-661d00972b55?w=240&q=70&auto=format&fit=crop", r:["Biscoitos natalinos de cortador","Pão de mel sem mel","Brigatone (mini chocotone recheado)","Granola natalina em pote"] },
+  { t:"Ano Novo", d:"Para a virada", img:"https://images.unsplash.com/photo-1664339031004-9cfdf88b8017?w=240&q=70&auto=format&fit=crop", r:["Lentilha da sorte","Salada de grão-de-bico com romã","Ponche de frutas sem álcool"] },
+  { t:"Bônus: Dia Seguinte", d:"6 receitas para não desperdiçar as sobras", img:"https://images.unsplash.com/photo-1667804068710-c0eaa0e6e250?w=240&q=70&auto=format&fit=crop", bonus:true, r:["Torta de liquidificador com sobras da ceia","Panquecas de banana para o café do dia 25","Wrap de tapioca com salpicão","Bolinhos de forno de farofa e frango","Pavê de travessa com panetone","Picolé de ponche de frutas"] }
+];
+var esc = function(s){return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+document.getElementById("cats").innerHTML = CATS.map(function(c){
+  return '<div class="cat'+(c.bonus?' bonus':'')+'"><div class="cat-h"><div class="ph" data-bg="'+c.img+'"></div><div><h3>'+esc(c.t)+' · '+c.r.length+'</h3><p>'+esc(c.d)+'</p></div></div><ul>'+
+    c.r.map(function(x){var p=x.split("|");return '<li><span>'+esc(p[0])+(p[1]?' <span class="free">grátis no app</span>':'')+'</span></li>'}).join("")+'</ul></div>';
+}).join("");
+
+/* ---- imagens de fundo (lazy) ---- */
+var bgs = document.querySelectorAll("[data-bg]");
+var setBg = function(el){ el.style.backgroundImage = 'url("'+el.getAttribute("data-bg")+'")'; };
+if ("IntersectionObserver" in window) {
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ setBg(e.target); io.unobserve(e.target); } }); }, { rootMargin:"300px" });
+  bgs.forEach(function(el){ io.observe(el); });
+} else bgs.forEach(setBg);
+
+/* ---- oferta do período ---- */
+document.getElementById("por").textContent = A.preco;
+document.getElementById("de").textContent = A.de ? "De R$ " + A.de : "";
+document.getElementById("prazo").textContent = A.prazo;
+var selo = document.getElementById("selo");
+if (A.selo) selo.textContent = A.selo; else selo.style.display = "none";
+document.querySelectorAll(".js-preco").forEach(function(el){ el.textContent = "R$ " + A.preco + " · acesso imediato"; });
+var bar = document.getElementById("bar");
+if (A.black) bar.innerHTML = "<b>Black do Natal até 30/11:</b> Ceia + Festival de Panetones + Kit Presente por R$ 37";
+else if (A.selo) bar.innerHTML = "<b>" + A.selo + ":</b> R$ " + A.preco + " até 31/10. Depois, R$ 37.";
+else bar.style.display = "none";
+if (A.black) {
+  var l = document.getElementById("lista");
+  l.insertAdjacentHTML("beforeend", '<li class="plus"><span><b>Festival de Panetones</b>: mais 8 sabores e guia de embalagem</span></li><li class="plus"><span><b>Kit Presente Resolvido</b>: 10 receitas de presentes em pote</span></li>');
+}
+
+/* ---- UTMs repassadas ao checkout e ao app ---- */
+var qs = new URLSearchParams(location.search), utm = new URLSearchParams();
+["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","src","sck"].forEach(function(k){ var v = qs.get(k); if (v) utm.set(k, v); });
+if (!utm.get("utm_source")) utm.set("utm_source", document.referrer ? "referencia" : "direto");
+var withQs = function(url, extra){ if (!url) return url; var u = new URL(url); utm.forEach(function(v,k){ if(!u.searchParams.has(k)) u.searchParams.set(k,v); }); if (extra) for (var k in extra) u.searchParams.set(k, extra[k]); return u.toString(); };
+var tl = document.getElementById("tryLink");
+tl.href = withQs(C.app + "#/c/ceia", { utm_campaign: "ceia", utm_content: "pagina_vendas_teste" });
+tl.addEventListener("click", function(){ fbq("trackCustom", "AbriuGratis", { origem: utm.get("utm_source") }); });
+
+/* ---- botões de compra ---- */
+document.querySelectorAll(".buy").forEach(function(b){
+  b.addEventListener("click", function(ev){
+    var oferta27 = b.getAttribute("data-oferta") === "27";
+    var url = oferta27 ? C.checkout27 : A.checkout;
+    var lugar = b.getAttribute("data-lugar");
+    if (lugar === "hero" && !oferta27) { return; } /* rola até a oferta */
+    ev.preventDefault();
+    fbq("trackCustom", "CliqueComprar", { lugar: lugar, valor: oferta27 ? 27 : A.valor, origem: utm.get("utm_source") });
+    if (!url) { alertaSemLink(); return; }
+    try { sessionStorage.setItem("foiCheckout", "1"); } catch(e) {}
+    location.href = withQs(url, { sck: lugar });
+  });
+});
+function alertaSemLink(){ document.getElementById("oferta").scrollIntoView({ behavior:"smooth" }); console.warn("Checkout ainda não configurado"); }
+
+/* ---- botão fixo no celular ---- */
+var sticky = document.getElementById("sticky"), oferta = document.getElementById("oferta");
+var onScroll = function(){ var r = oferta.getBoundingClientRect(); var vis = scrollY > 700 && !(r.top < innerHeight && r.bottom > 0); sticky.classList.toggle("on", vis); };
+addEventListener("scroll", onScroll, { passive:true });
+
+/* ---- popup de saída (só computador, só quando a condição de R$ 27 está ativa) ---- */
+var pop = document.getElementById("pop"), mostrou = false;
+try { mostrou = sessionStorage.getItem("pop27") === "1"; } catch(e) {}
+var desktop = matchMedia("(pointer:fine) and (min-width:900px)").matches;
+if (A.popup27 && C.checkout27 && desktop) {
+  document.addEventListener("mouseout", function(e){
+    if (mostrou || e.relatedTarget || e.clientY > 8) return;
+    mostrou = true; try { sessionStorage.setItem("pop27","1"); } catch(err) {}
+    pop.classList.add("on"); fbq("trackCustom", "PopupSaida", { origem: utm.get("utm_source") });
+  });
+}
+pop.addEventListener("click", function(e){ if (e.target === pop || e.target.hasAttribute("data-close")) pop.classList.remove("on"); });
+addEventListener("keydown", function(e){ if (e.key === "Escape") pop.classList.remove("on"); });
+
+/* ---- depoimentos reais (vazio até existirem) ---- */
+if (C.testimonials.length) {
+  document.getElementById("testi").classList.add("on");
+  document.getElementById("testiList").innerHTML = C.testimonials.map(function(t){ return '<div class="t"><p>"' + esc(t.text) + '"</p><b>' + esc(t.name) + '</b> · ' + esc(t.city || "") + '</div>'; }).join("");
+}
+})();
+</script>
+</body>
+</html>
