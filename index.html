@@ -19,13 +19,13 @@ window.CONFIG = {
   pixelId: "1727998194935547",
   app: "https://app.cozinhaqueresolve.com/",
   periodos: [
-    { ate: "2026-10-31T23:59:59-03:00", preco: "19,90", valor: 19.90, de: "37", selo: "Oferta de lançamento", prazo: "Até 31/10 às 23h59. Dia 01/11 o preço passa para R$ 37.", checkout: "https://pay.cakto.com.br/7dvdjn6", popup27: false },
-    { ate: "2026-11-22T23:59:59-03:00", preco: "37", valor: 37, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/6ae78sk", popup27: true },
-    { ate: "2026-11-30T23:59:59-03:00", preco: "37", valor: 37, de: "67,80", selo: "Black do Natal", prazo: "De 23 a 30/11: a Ceia vem com o Festival de Panetones e o Kit Presente, sem custo a mais.", checkout: "https://pay.cakto.com.br/34ospai", popup27: false, black: true },
-    { ate: "2026-12-31T23:59:59-03:00", preco: "37", valor: 37, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/6ae78sk", popup27: true },
+    { ate: "2026-10-31T23:59:59-03:00", preco: "19,90", valor: 19.90, de: "29,90", selo: "Oferta de lançamento", prazo: "Até 31/10 às 23h59. Dia 01/11 o preço passa para R$ 29,90.", checkout: "https://pay.cakto.com.br/7dvdjn6", popup27: false },
+    { ate: "2026-11-22T23:59:59-03:00", preco: "29,90", valor: 29.90, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/ygknwb6", popup27: true },
+    { ate: "2026-11-30T23:59:59-03:00", preco: "37", valor: 37, de: "60,70", selo: "Black do Natal", prazo: "De 23 a 30/11: a Ceia vem com o Festival de Panetones e o Kit Presente, sem custo a mais.", checkout: "https://pay.cakto.com.br/34ospai", popup27: false, black: true },
+    { ate: "2026-12-31T23:59:59-03:00", preco: "29,90", valor: 29.90, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/ygknwb6", popup27: true },
     { ate: "2099-12-31T23:59:59-03:00", preco: "29,90", valor: 29.90, de: "", selo: "", prazo: "Pagamento único. Acesso imediato no app.", checkout: "https://pay.cakto.com.br/ygknwb6", popup27: false }
   ],
-  checkout27: "https://pay.cakto.com.br/3fezcei",           /* oferta de R$ 27 (recuperação), mesma entrega da de R$ 37 */
+  checkout27: "https://pay.cakto.com.br/3fezcei",           /* oferta de R$ 27 (recuperação), mesma entrega da de R$ 29,90 */
   testimonials: []          /* só depoimentos reais, com autorização */
 };
 (function(){
@@ -406,7 +406,7 @@ if (A.selo) selo.textContent = A.selo; else selo.style.display = "none";
 document.querySelectorAll(".js-preco").forEach(function(el){ el.textContent = "R$ " + A.preco + " · acesso imediato"; });
 var bar = document.getElementById("bar");
 if (A.black) bar.innerHTML = "<b>Black do Natal até 30/11:</b> Ceia + Festival de Panetones + Kit Presente por R$ 37";
-else if (A.selo) bar.innerHTML = "<b>" + A.selo + ":</b> R$ " + A.preco + " até 31/10. Depois, R$ 37.";
+else if (A.selo) bar.innerHTML = "<b>" + A.selo + ":</b> R$ " + A.preco + " até 31/10. Depois, R$ 29,90.";
 else bar.style.display = "none";
 if (A.black) {
   var l = document.getElementById("lista");
